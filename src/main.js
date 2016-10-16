@@ -7,20 +7,20 @@ Vue.config.debug = true
 Vue.use(VueRouter)
 Vue.use(VueResource)
 
-import firstComponent from './component/FirstComponent.vue'
-const secondComponent = { template: '<div>呵呵，老二</div>' }
+import doubanComponent from './component/DoubanComponent.vue'
+import bioComponent from './component/BioComponent.vue'
 
 const router = new VueRouter({
     mode: 'history',
     base: __dirname,
     routes: [
         {
-            path: '/first',
-            component: firstComponent,
+            path: '/douban',
+            component: doubanComponent,
         },
         {
-            path: '/second',
-            component: secondComponent,
+            path: '/bio',
+            component: bioComponent,
         },
     ],
 })
