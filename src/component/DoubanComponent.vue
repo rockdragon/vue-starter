@@ -43,7 +43,7 @@ div.container{
     flex-wrap: wrap;
 }
 div.row {
-    width: 120px;
+    width: 8rem;
     text-align: center;
     display: -webkit-inline-block;
     display:inline-block;
