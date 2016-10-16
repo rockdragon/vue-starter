@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --inline --hot",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
+    "deploy": "npm run build && cp -f index.html /var/www/v.fun4 && cp -rf dist /var/www/v.fun4"
   },
   "dependencies": {
     "vue": "^2.0.1",
